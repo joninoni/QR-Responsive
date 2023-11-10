@@ -1,0 +1,82 @@
+:root{
+    --fuentePrincipal: 'Outfit', sans-serif;
+    --attribution-p { font-size: 11px; text-align: center; }
+    --attribution-a{ color: hsl(228, 45%, 44%); }
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue:hsl(218, 44%, 22%);
+}
+body{
+    background-color: var(--grayishBlue);
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.codigo-QR{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+@media (min-width: 375px) {
+    .codigo-QR__contenido{
+        padding: 30px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color:white;
+        border-radius: 30px;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        left: 60px;
+    }
+    .codigo-QR__parrafo{
+        font-size: 20px;
+        color: var(--darkBlue);
+        font-weight: 700;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .codigo-QR__parrafo-dos{
+        color: var(--grayishBlue);
+        font-size: 15px;
+        margin-top: 0;
+        text-align: center;
+    }
+}
+.codigo-QR__imagen{
+    border-radius: 15px;
+}
+@media (min-width: 768px) {
+    .codigo-QR__contenido{
+        top: 130px;
+        left: 150px;
+    }
+    .codigo-QR__parrafo{
+        font-size: 25px;
+        font-weight: 700;
+        color: var(--darkBlue);
+    }
+    .codigo-QR__parrafo-dos{
+        font-size: 19px;
+        color: var(--grayishBlue);
+    }
+}
+@media (min-width: 1440px) {
+    .codigo-QR__contenido{
+        top: 150px;
+        left: 290px;
+    }
+    .codigo-QR__parrafo{
+        font-size: 40px;
+        font-weight: 700;
+        color: var(--darkBlue);
+    }
+    .codigo-QR__parrafo-dos{
+        font-size: 25px;
+        line-height: 1.5;
+        color: var(--grayishBlue);
+    }
+}
